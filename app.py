@@ -54,7 +54,7 @@ def move(position):
 
 @app.route('/reset', methods=['POST'])
 def reset():
-    game.reset_game()  # Correct the method name here
+    game.reset_game()
     return redirect(url_for('index'))
 
 @app.route('/about')
